@@ -1,0 +1,13 @@
+{
+  "pluginName": "BT08 Nông Trí Builder",
+  "pluginId": "bt08-nongtri-builder",
+  "screens": [
+    { "id": "01-trang-chu",      "file": "01-trang-chu.html",      "name": "01 · Trang chủ",             "width": 390, "height": 844 },
+    { "id": "02-chup-anh",       "file": "02-chup-anh.html",       "name": "02 · Chụp ảnh",              "width": 390, "height": 844 },
+    { "id": "03-ket-qua",        "file": "03-ket-qua.html",        "name": "03 · Kết quả chẩn đoán",     "width": 390, "height": 844 },
+    { "id": "04-hoi-dap",        "file": "04-hoi-dap.html",        "name": "04 · Hỏi đáp giọng nói",     "width": 390, "height": 844 },
+    { "id": "05-gia-nong-san",   "file": "05-gia-nong-san.html",   "name": "05 · Giá nông sản",          "width": 390, "height": 844 },
+    { "id": "06-nhat-ky",        "file": "06-nhat-ky.html",        "name": "06 · Nhật ký mùa vụ",        "width": 390, "height": 844 },
+    { "id": "07-quyen-rieng-tu", "file": "07-quyen-rieng-tu.html", "name": "07 · Quyền riêng tư",        "width": 390, "height": 844 }
+  ]
+}

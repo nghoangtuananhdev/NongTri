@@ -1,0 +1,67 @@
+{
+  "suffix": "SangTaoTreAI",
+  "footer": "BT08 – Tư duy thiết kế & UX",
+  "labels": { "hoTen": "Họ tên", "mssv": "MSSV", "stt": "STT", "lop": "Lớp", "email": "Email" },
+  "slides": [
+    { "kind": "title", "title": "Nông Trí – Trợ lý AI cho nông dân Đồng bằng sông Cửu Long",
+      "subtitle": "Đề tài dự thi Sáng tạo trẻ Quốc gia trong lĩnh vực AI 2026 – Bảng C · Chủ đề: AI cho phát triển kinh tế – xã hội" },
+    { "kind": "bullets", "title": "Giới thiệu cuộc thi & Bảng C", "size": 19, "bullets": [
+      "Đối tượng: công dân 12–22 tuổi; Bảng C dành cho sinh viên, đội tối đa 3 người",
+      "Hồ sơ: PDF ≤ 20 trang, video thuyết trình và demo (mỗi video ≤ 5 phút), kê khai AI",
+      "Mốc: Khu vực 17–18/10/2026; chung kết Hà Nội 20–22/11/2026",
+      "Trọng tâm chấm: giá trị thực tiễn, dữ liệu, bảo mật, đạo đức AI, khả năng triển khai" ] },
+    { "kind": "bullets", "title": "Vấn đề", "size": 20, "bullets": [
+      "Sâu bệnh: phát hiện muộn hoặc nhận nhầm",
+      "Thuốc BVTV: lạm dụng, tốn chi phí và hại môi trường",
+      "Giá cả: thiếu thông tin nên dễ bị ép giá",
+      "Khuyến nông: khó tiếp cận cán bộ",
+      "Công nghệ: rào cản với người lớn tuổi" ] },
+    { "kind": "two", "title": "Người dùng mục tiêu (persona giả định)",
+      "left": { "heading": "Chú Tư, 58 tuổi", "bullets": ["Trồng 2,5 ha lúa ở Châu Thành, Đồng Tháp", "Mắt kém, quen nói hơn gõ", "Dùng Zalo cơ bản"] },
+      "right": { "heading": "Chị Lan, cán bộ khuyến nông xã", "bullets": ["Nhận các ca khó từ ứng dụng", "Cần ảnh và nhật ký rõ ràng", "Muốn hỗ trợ nhiều hộ cùng lúc"] } },
+    { "kind": "bullets", "title": "Giải pháp & tính năng", "size": 19, "bullets": [
+      "Chụp lá, biết bệnh: chẩn đoán kèm độ tin cậy",
+      "Hỏi đáp giọng nói: trả lời có trích nguồn",
+      "Giá và dự báo: biểu đồ, khoảng tin cậy",
+      "Nhật ký mùa vụ: chi phí và lịch canh tác",
+      "Cảnh báo dịch theo vị trí đã ẩn danh",
+      "Quyền riêng tư: người dùng làm chủ dữ liệu" ] },
+    { "kind": "layers", "title": "Kiến trúc AI & dữ liệu", "layers": [
+      { "name": "Dữ liệu", "text": "Ảnh lá gán nhãn từ chuyên gia, tài liệu khuyến nông, giá thị trường" },
+      { "name": "Mô hình", "text": "Thị giác nhận diện bệnh · ASR/TTS tiếng Việt · LLM + RAG · dự báo chuỗi thời gian" },
+      { "name": "Dịch vụ", "text": "API chẩn đoán, hỏi đáp, giá, cảnh báo dịch" },
+      { "name": "Ứng dụng", "text": "Nông Trí trên điện thoại, kết nối cán bộ khuyến nông" } ] },
+    { "kind": "two", "title": "Chỉ số (mục tiêu) & Bảo mật – Đạo đức AI",
+      "left": { "heading": "Chỉ số mục tiêu", "bullets": ["Độ chính xác chẩn đoán ≥ 90%", "Phản hồi < 3 giây", "Giảm 20% chi phí thuốc sau 1 vụ", "Người ≥ 55 tuổi hoàn thành tác vụ ≥ 85%"] },
+      "right": { "heading": "Bảo mật & đạo đức", "bullets": ["Mã hóa, lưu trữ trong nước", "Người dùng chủ động chia sẻ, xóa dữ liệu", "Minh bạch độ tin cậy", "Không thay chuyên gia, không quảng cáo thuốc"] } },
+    { "kind": "flow", "title": "Luồng chẩn đoán bệnh", "steps": [
+      "Mở ứng dụng", "Chụp lá", "AI phân tích", "Xem kết quả và độ tin cậy", "Nghe đọc hoặc gọi khuyến nông", "Lưu vào nhật ký" ],
+      "note": "Mọi số liệu trong prototype là dữ liệu mô phỏng." },
+    { "kind": "phones", "title": "Trang chủ & Chụp ảnh", "images": ["01-trang-chu", "02-chup-anh"], "bullets": [
+      "Cảnh báo dịch nổi bật", "4 nút lớn, icon kèm chữ", "Chụp 1 chạm, có hướng dẫn" ] },
+    { "kind": "phones", "title": "Kết quả & Hỏi đáp giọng nói", "images": ["03-ket-qua", "04-hoi-dap"], "bullets": [
+      "Độ tin cậy và 3 bước làm ngay", "Cảnh báo: AI gợi ý", "Nút mic lớn, nghe lại" ] },
+    { "kind": "phones", "title": "Giá nông sản & Nhật ký", "images": ["05-gia-nong-san", "06-nhat-ky"], "bullets": [
+      "Giá hiện tại và dự báo", "Lời khuyên chỉ tham khảo", "Nhật ký dạng dòng thời gian" ] },
+    { "kind": "phones", "title": "Quyền riêng tư – người dùng làm chủ dữ liệu", "images": ["07-quyen-rieng-tu"], "bullets": [
+      "Công tắc lớn, dễ bật tắt", "Dữ liệu mã hóa, lưu trong nước", "Tải hoặc xóa dữ liệu bất cứ lúc nào" ] },
+    { "kind": "bullets", "title": "Thiết kế cho người lớn tuổi", "size": 19, "bullets": [
+      "Chữ thân ≥ 18 px, nút ≥ 56 px",
+      "Giọng nói trước, gõ chữ sau",
+      "Tương phản cao",
+      "Tối đa 4 lựa chọn chính mỗi màn",
+      "Icon luôn kèm chữ" ] },
+    { "kind": "bullets", "title": "Demo prototype Figma", "size": 18, "bullets": [
+      "Link: https://www.figma.com/proto/foyccQwf5hoeBPOOWD8cWB/BT08-NongTri",
+      "Kịch bản: Trang chủ → Chụp lá → Kết quả → Nhật ký → Quyền riêng tư",
+      "Sau đó: tab Hỏi đáp và tab Giá cả",
+      "Ghi chú: dữ liệu trong prototype là mô phỏng" ] },
+    { "kind": "bullets", "title": "Kê khai công cụ AI & nguồn lực", "size": 18, "bullets": [
+      "Claude (Anthropic): hỗ trợ ý tưởng, code giao diện mô phỏng, slide",
+      "Mã nguồn mở: Bootstrap, jQuery, Bootstrap Icons, font Inter",
+      "Ảnh minh họa: Wikimedia Commons (xem CREDITS.md)",
+      "Sinh viên tự làm: chọn đề tài, kiểm tra và chỉnh thiết kế, thuyết trình" ] },
+    { "kind": "end", "title": "Cảm ơn thầy cô và các bạn đã lắng nghe!",
+      "subtitle": "Hướng phát triển: mở rộng sang cây ăn trái, kết nối hợp tác xã." }
+  ]
+}
